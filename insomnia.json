@@ -1,1 +1,786 @@
-{"_type":"export","__export_format":4,"__export_date":"2022-01-06T04:46:09.510Z","__export_source":"insomnia.desktop.app:v2021.7.2","resources":[{"_id":"req_ff5b35700ae843f18096067a0c8419af","parentId":"wrk_795aeea3b6bf49ce92a04cc7bbf1b359","modified":1641431450819,"created":1639932881136,"url":"{{ _.schema }}://{{ _.base_path }}/roll","name":"/roll","description":"","method":"POST","body":{"mimeType":"application/json","text":"{\n\t\"dice\":\n\t[\n\t\t{\n\t\t\"modifier\": -2, \n\t\t\"amount\": 1, \n\t\t\"sides\": 12\n\t\t}\n\t]\n}"},"parameters":[],"headers":[{"name":"Content-Type","value":"application/json"}],"authentication":{},"metaSortKey":-1639932881136,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"wrk_795aeea3b6bf49ce92a04cc7bbf1b359","parentId":null,"modified":1639932865060,"created":1639932865060,"name":"table fables","description":"","scope":"collection","_type":"workspace"},{"_id":"req_4c88c9bc259f489c9be78e2d3e89ccce","parentId":"wrk_795aeea3b6bf49ce92a04cc7bbf1b359","modified":1639951345479,"created":1639933042603,"url":"{{ _.schema }}://{{ _.base_path }}","name":"index","description":"","method":"GET","body":{},"parameters":[],"headers":[],"authentication":{},"metaSortKey":-1639933042603,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_f0912e3702f1491f969f503a49b7fb15","parentId":"wrk_795aeea3b6bf49ce92a04cc7bbf1b359","modified":1639960898443,"created":1639955398996,"url":"{{ _.schema }}://{{ _.base_path }}/roll","name":"/roll D20","description":"","method":"POST","body":{"mimeType":"application/json","text":"{\n\t\"dice\":\n\t[\n\t\t{\n\t\t\"modifier\": 0, \n\t\t\"amount\": 1, \n\t\t\"sides\": 20\n\t\t}\n\t]\n}"},"parameters":[],"headers":[{"name":"Content-Type","value":"application/json"}],"authentication":{},"metaSortKey":-1638814973059.5,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_27c26271d2844daeb172c87f9f8ba576","parentId":"wrk_795aeea3b6bf49ce92a04cc7bbf1b359","modified":1639960894711,"created":1639955414997,"url":"{{ _.schema }}://{{ _.base_path }}/roll","name":"/roll D4","description":"","method":"POST","body":{"mimeType":"application/json","text":"{\n\t\"dice\":\n\t[\n\t\t{\n\t\t\"modifier\": 0, \n\t\t\"amount\": 1, \n\t\t\"sides\": 4\n\t\t}\n\t]\n}"},"parameters":[],"headers":[{"name":"Content-Type","value":"application/json"}],"authentication":{},"metaSortKey":-1639373927097.75,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_41825e64c3ed4ba48f27907261ae1d9b","parentId":"wrk_795aeea3b6bf49ce92a04cc7bbf1b359","modified":1639960890827,"created":1639955430447,"url":"{{ _.schema }}://{{ _.base_path }}/roll","name":"/roll D6","description":"","method":"POST","body":{"mimeType":"application/json","text":"{\n\t\"dice\":\n\t[\n\t\t{\n\t\t\"modifier\": 0, \n\t\t\"amount\": 1, \n\t\t\"sides\": 6\n\t\t}\n\t]\n}"},"parameters":[],"headers":[{"name":"Content-Type","value":"application/json"}],"authentication":{},"metaSortKey":-1639653404116.875,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_27bfe107fe7b40aa8e4839e2c5560de9","parentId":"wrk_795aeea3b6bf49ce92a04cc7bbf1b359","modified":1639960886811,"created":1639955442147,"url":"{{ _.schema }}://{{ _.base_path }}/roll","name":"/roll D8","description":"","method":"POST","body":{"mimeType":"application/json","text":"{\n\t\"dice\":\n\t[\n\t\t{\n\t\t\"modifier\": 0, \n\t\t\"amount\": 1, \n\t\t\"sides\": 8\n\t\t}\n\t]\n}"},"parameters":[],"headers":[{"name":"Content-Type","value":"application/json"}],"authentication":{},"metaSortKey":-1639793142626.4375,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_aef0394575084ba6aa9990101d972022","parentId":"wrk_795aeea3b6bf49ce92a04cc7bbf1b359","modified":1639960882861,"created":1639955455981,"url":"{{ _.schema }}://{{ _.base_path }}/roll","name":"/roll D10","description":"","method":"POST","body":{"mimeType":"application/json","text":"{\n\t\"dice\":\n\t[\n\t\t{\n\t\t\"modifier\": 0, \n\t\t\"amount\": 1, \n\t\t\"sides\": 10\n\t\t}\n\t]\n}"},"parameters":[],"headers":[{"name":"Content-Type","value":"application/json"}],"authentication":{},"metaSortKey":-1639863011881.2188,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_78bcf30652604422ab98219273baac09","parentId":"wrk_795aeea3b6bf49ce92a04cc7bbf1b359","modified":1639960878761,"created":1639955469564,"url":"{{ _.schema }}://{{ _.base_path }}/roll","name":"/roll D12","description":"","method":"POST","body":{"mimeType":"application/json","text":"{\n\t\"dice\":\n\t[\n\t\t{\n\t\t\"modifier\": 0, \n\t\t\"amount\": 1, \n\t\t\"sides\": 12\n\t\t}\n\t]\n}"},"parameters":[],"headers":[{"name":"Content-Type","value":"application/json"}],"authentication":{},"metaSortKey":-1639897946508.6094,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_46fbf930dd4e4c358b7dc12d626b7d57","parentId":"wrk_795aeea3b6bf49ce92a04cc7bbf1b359","modified":1639986732241,"created":1639957629089,"url":"{{ _.schema }}://{{ _.base_path }}/roll","name":"/roll one of each","description":"","method":"POST","body":{"mimeType":"application/json","text":"{\n\t\"dice\":\n\t[\n\t\t\t{\n\t\t\t\"modifier\": 0, \n\t\t\t\"amount\": 1, \n\t\t\t\"sides\": 4\n\t\t\t},\n\t\t{\n\t\t\"modifier\": 0, \n\t\t\"amount\": 1, \n\t\t\"sides\": 6\n\t\t},\n\t\t{\n\t\t\"modifier\": 0, \n\t\t\"amount\": 1, \n\t\t\"sides\": 8\n\t\t},\n\t\t{\n\t\t\"modifier\": 0, \n\t\t\"amount\": 1, \n\t\t\"sides\": 10\n\t\t},\n\t\t{\n\t\t\"modifier\": 0, \n\t\t\"amount\": 1, \n\t\t\"sides\": 12\n\t\t},\n\t\t{\n\t\t\"modifier\": 0, \n\t\t\"amount\": 1, \n\t\t\"sides\": 20\n\t\t}\n\t]\n}"},"parameters":[],"headers":[{"name":"Content-Type","value":"application/json"}],"authentication":{},"metaSortKey":-1639915413822.3047,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_f9c9b0b763c443cbab925886c21f1f8a","parentId":"wrk_795aeea3b6bf49ce92a04cc7bbf1b359","modified":1639960868261,"created":1639957775987,"url":"{{ _.schema }}://{{ _.base_path }}/roll","name":"/roll 4d6","description":"","method":"POST","body":{"mimeType":"application/json","text":"{\n\t\"dice\":\n\t[\n\t\t{\n\t\t\"modifier\": 0, \n\t\t\"amount\": 4, \n\t\t\"sides\": 6\n\t\t}\n\t]\n}"},"parameters":[],"headers":[{"name":"Content-Type","value":"application/json"}],"authentication":{},"metaSortKey":-1639924147479.1523,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_40569beac7fb4a22a83108697564535f","parentId":"wrk_795aeea3b6bf49ce92a04cc7bbf1b359","modified":1641440407351,"created":1639959170762,"url":"{{ _.schema }}://{{ _.base_path }}/roll","name":"/roll empty body","description":"","method":"POST","body":{"mimeType":"application/json","text":""},"parameters":[],"headers":[{"name":"Content-Type","value":"application/json"}],"authentication":{},"metaSortKey":-1639928514307.5762,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_1cd7b24de8a34880ab568dd3a4003431","parentId":"wrk_795aeea3b6bf49ce92a04cc7bbf1b359","modified":1641440406408,"created":1639962737819,"url":"{{ _.schema }}://{{ _.base_path }}/roll","name":"/roll","description":"","method":"GET","body":{"mimeType":"application/json","text":""},"parameters":[],"headers":[{"name":"Content-Type","value":"application/json"}],"authentication":{},"metaSortKey":-1639930697721.788,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_2d03571cfc40413e8a52a77716c063fc","parentId":"wrk_795aeea3b6bf49ce92a04cc7bbf1b359","modified":1640062086271,"created":1640062082335,"url":"{{ _.schema }}://{{ _.base_path }}/npc","name":"npc","description":"","method":"GET","body":{},"parameters":[],"headers":[],"authentication":{},"metaSortKey":-1639932961869.5,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_47a0262cc49449c7a9fba7c8f0c742f0","parentId":"wrk_795aeea3b6bf49ce92a04cc7bbf1b359","modified":1641439027776,"created":1640626245256,"url":"{{ _.schema }}://{{ _.base_path }}/loot:create_table","name":"test roll","description":"","method":"POST","body":{"mimeType":"application/json","text":"{\"name\": \"test loot\",\n    \"description\": \"test loot description\",\n    \"weight\": 1,\n    \"value\": 1,\n    \"rarity\": \"common\",\n    \"type\": \"test\",\n    \"image\": \"test.png\"}"},"parameters":[],"headers":[{"name":"Content-Type","value":"application/json"}],"authentication":{},"metaSortKey":-1639931789428.894,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_9b2eef2e876140c3929d0a12690ead2c","parentId":"wrk_795aeea3b6bf49ce92a04cc7bbf1b359","modified":1641442290797,"created":1641438820918,"url":"{{ _.schema }}://{{ _.base_path }}/loot:create_table","name":"Create Loot Table","description":"","method":"POST","body":{"mimeType":"application/json","text":""},"parameters":[],"headers":[{"name":"Content-Type","value":"application/json"},{"name":"api-key","value":"TEST"}],"authentication":{},"metaSortKey":-1639931243575.341,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_db9d6f530d404ca79b905e16a0c300dd","parentId":"wrk_795aeea3b6bf49ce92a04cc7bbf1b359","modified":1641442451471,"created":1641438868519,"url":"{{ _.schema }}://{{ _.base_path }}/loot:drop_table","name":"Drop Loot Table","description":"","method":"DELETE","body":{"mimeType":"application/json","text":""},"parameters":[],"headers":[{"name":"Content-Type","value":"application/json"}],"authentication":{},"metaSortKey":-1639931516502.1177,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_fdff2320a13941a0b23c0c6c1c91dd85","parentId":"wrk_795aeea3b6bf49ce92a04cc7bbf1b359","modified":1641442316409,"created":1641438889131,"url":"{{ _.schema }}://{{ _.base_path }}/loot","name":"Get Loot Collection","description":"","method":"GET","body":{"mimeType":"application/json","text":""},"parameters":[],"headers":[{"name":"Content-Type","value":"application/json"}],"authentication":{},"metaSortKey":-1639931652965.5059,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_3ce73564dc424d0387e5a7496f6c7fc5","parentId":"wrk_795aeea3b6bf49ce92a04cc7bbf1b359","modified":1641442087463,"created":1641438919181,"url":"{{ _.schema }}://{{ _.base_path }}/loot/2","name":"Get Loot Resource","description":"","method":"GET","body":{"mimeType":"application/json","text":""},"parameters":[],"headers":[{"name":"Content-Type","value":"application/json"}],"authentication":{},"metaSortKey":-1639931721197.2,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_bffdebd82a98429d9dc8aab62a2dc2e7","parentId":"wrk_795aeea3b6bf49ce92a04cc7bbf1b359","modified":1641442040442,"created":1641438937680,"url":"{{ _.schema }}://{{ _.base_path }}/loot/1","name":"Delete Loot Resource","description":"","method":"DELETE","body":{"mimeType":"application/json","text":""},"parameters":[],"headers":[{"name":"Content-Type","value":"application/json"},{"name":"api-key","value":"TEST"}],"authentication":{},"metaSortKey":-1639931755313.0469,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_91b17a0c4dcc4bcc9b6008178d2c35e8","parentId":"wrk_795aeea3b6bf49ce92a04cc7bbf1b359","modified":1641442027450,"created":1641438963214,"url":"{{ _.schema }}://{{ _.base_path }}/loot/1","name":"Update Loot Resource","description":"","method":"PUT","body":{"mimeType":"application/json","text":"{\n\t\t\"name\": \"test\",\n\t\t\"description\": \"test\",\n\t\t\"bit_value\": 1,\n\t\t\"channel_point_value\": 1,\n\t\t\"description\": \"test\",\n\t\t\"image_url\": \"{fake.url()}/.jpg\",\n\t\t\"custom_message\": \"test\"\n\n}"},"parameters":[],"headers":[{"name":"Content-Type","value":"application/json"},{"name":"api-key","value":"TEST"}],"authentication":{},"metaSortKey":-1639931772370.9705,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_44bcf7e12caa4fa58e4366ab9cfdd8c0","parentId":"wrk_795aeea3b6bf49ce92a04cc7bbf1b359","modified":1641442017842,"created":1641439008006,"url":"{{ _.schema }}://{{ _.base_path }}/loot","name":"Create Loot Resource","description":"","method":"POST","body":{"mimeType":"application/json","text":"{\n\t\t\"name\": \"test\",\n\t\t\"description\": \"test\",\n\t\t\"bit_value\": 1,\n\t\t\"channel_point_value\": 1,\n\t\t\"description\": \"test\",\n\t\t\"image_url\": \"{fake.url()}/.jpg\",\n\t\t\"custom_message\": \"test\"\n\n}"},"parameters":[],"headers":[{"name":"Content-Type","value":"application/json"},{"name":"api-key","value":"TEST"}],"authentication":{},"metaSortKey":-1639931780899.9321,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_2d0a1b8e9c4b496d9507861125647555","parentId":"wrk_795aeea3b6bf49ce92a04cc7bbf1b359","modified":1641442305548,"created":1641439034579,"url":"{{ _.schema }}://{{ _.base_path }}/loot:seed","name":"Seed Loot Table","description":"","method":"POST","body":{"mimeType":"application/json","text":"{\"loot_count\": 100}"},"parameters":[],"headers":[{"name":"Content-Type","value":"application/json"},{"name":"api-key","value":"TEST"}],"authentication":{},"metaSortKey":-1639931785164.413,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"env_c10728952515cce18d90a133e8025acd3bf23fb5","parentId":"wrk_795aeea3b6bf49ce92a04cc7bbf1b359","modified":1639951532196,"created":1639932865079,"name":"Base Environment","data":{"schema":"http","base_path":"0.0.0.0:8080"},"dataPropertyOrder":{"&":["schema","base_path"]},"color":null,"isPrivate":false,"metaSortKey":1639932865080,"_type":"environment"},{"_id":"jar_c10728952515cce18d90a133e8025acd3bf23fb5","parentId":"wrk_795aeea3b6bf49ce92a04cc7bbf1b359","modified":1639932865082,"created":1639932865082,"name":"Default Jar","cookies":[],"_type":"cookie_jar"},{"_id":"spc_fd11ace960314f83bc2c1d616c67908b","parentId":"wrk_795aeea3b6bf49ce92a04cc7bbf1b359","modified":1639932865065,"created":1639932865065,"fileName":"table fables","contents":"","contentType":"yaml","_type":"api_spec"},{"_id":"env_9ec6ba16dc4f42d499637a1c7598c3e1","parentId":"env_c10728952515cce18d90a133e8025acd3bf23fb5","modified":1639951581934,"created":1639951449404,"name":"Production","data":{"schema":"https","base_path":"tablefables.herokuapp.com"},"dataPropertyOrder":{"&":["schema","base_path"]},"color":"#b43c3c","isPrivate":false,"metaSortKey":1639951449404,"_type":"environment"},{"_id":"env_b833b74684e04a53a077aedb57a9ad16","parentId":"env_c10728952515cce18d90a133e8025acd3bf23fb5","modified":1639951551461,"created":1639951516567,"name":"Dev","data":{"schema":"http","base_path":"0.0.0.0:8080"},"dataPropertyOrder":{"&":["schema","base_path"]},"color":"#3cb48c","isPrivate":false,"metaSortKey":1639951449454,"_type":"environment"}]}
+{
+    "_type": "export",
+    "__export_format": 4,
+    "__export_date": "2022-01-06T04:46:09.510Z",
+    "__export_source": "insomnia.desktop.app:v2021.7.2",
+    "resources": [
+        {
+            "_id": "req_ff5b35700ae843f18096067a0c8419af",
+            "parentId": "wrk_795aeea3b6bf49ce92a04cc7bbf1b359",
+            "modified": 1641431450819,
+            "created": 1639932881136,
+            "url": "{{ _.schema }}://{{ _.base_path }}/roll",
+            "name": "/roll",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"dice\":\n\t[\n\t\t{\n\t\t\"modifier\": -2, \n\t\t\"amount\": 1, \n\t\t\"sides\": 12\n\t\t}\n\t]\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1639932881136,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "wrk_795aeea3b6bf49ce92a04cc7bbf1b359",
+            "parentId": null,
+            "modified": 1639932865060,
+            "created": 1639932865060,
+            "name": "table fables",
+            "description": "",
+            "scope": "collection",
+            "_type": "workspace"
+        },
+        {
+            "_id": "req_4c88c9bc259f489c9be78e2d3e89ccce",
+            "parentId": "wrk_795aeea3b6bf49ce92a04cc7bbf1b359",
+            "modified": 1639951345479,
+            "created": 1639933042603,
+            "url": "{{ _.schema }}://{{ _.base_path }}",
+            "name": "index",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [],
+            "authentication": {},
+            "metaSortKey": -1639933042603,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_f0912e3702f1491f969f503a49b7fb15",
+            "parentId": "wrk_795aeea3b6bf49ce92a04cc7bbf1b359",
+            "modified": 1639960898443,
+            "created": 1639955398996,
+            "url": "{{ _.schema }}://{{ _.base_path }}/roll",
+            "name": "/roll D20",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"dice\":\n\t[\n\t\t{\n\t\t\"modifier\": 0, \n\t\t\"amount\": 1, \n\t\t\"sides\": 20\n\t\t}\n\t]\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1638814973059.5,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_27c26271d2844daeb172c87f9f8ba576",
+            "parentId": "wrk_795aeea3b6bf49ce92a04cc7bbf1b359",
+            "modified": 1639960894711,
+            "created": 1639955414997,
+            "url": "{{ _.schema }}://{{ _.base_path }}/roll",
+            "name": "/roll D4",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"dice\":\n\t[\n\t\t{\n\t\t\"modifier\": 0, \n\t\t\"amount\": 1, \n\t\t\"sides\": 4\n\t\t}\n\t]\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1639373927097.75,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_41825e64c3ed4ba48f27907261ae1d9b",
+            "parentId": "wrk_795aeea3b6bf49ce92a04cc7bbf1b359",
+            "modified": 1639960890827,
+            "created": 1639955430447,
+            "url": "{{ _.schema }}://{{ _.base_path }}/roll",
+            "name": "/roll D6",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"dice\":\n\t[\n\t\t{\n\t\t\"modifier\": 0, \n\t\t\"amount\": 1, \n\t\t\"sides\": 6\n\t\t}\n\t]\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1639653404116.875,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_27bfe107fe7b40aa8e4839e2c5560de9",
+            "parentId": "wrk_795aeea3b6bf49ce92a04cc7bbf1b359",
+            "modified": 1639960886811,
+            "created": 1639955442147,
+            "url": "{{ _.schema }}://{{ _.base_path }}/roll",
+            "name": "/roll D8",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"dice\":\n\t[\n\t\t{\n\t\t\"modifier\": 0, \n\t\t\"amount\": 1, \n\t\t\"sides\": 8\n\t\t}\n\t]\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1639793142626.4375,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_aef0394575084ba6aa9990101d972022",
+            "parentId": "wrk_795aeea3b6bf49ce92a04cc7bbf1b359",
+            "modified": 1639960882861,
+            "created": 1639955455981,
+            "url": "{{ _.schema }}://{{ _.base_path }}/roll",
+            "name": "/roll D10",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"dice\":\n\t[\n\t\t{\n\t\t\"modifier\": 0, \n\t\t\"amount\": 1, \n\t\t\"sides\": 10\n\t\t}\n\t]\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1639863011881.2188,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_78bcf30652604422ab98219273baac09",
+            "parentId": "wrk_795aeea3b6bf49ce92a04cc7bbf1b359",
+            "modified": 1639960878761,
+            "created": 1639955469564,
+            "url": "{{ _.schema }}://{{ _.base_path }}/roll",
+            "name": "/roll D12",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"dice\":\n\t[\n\t\t{\n\t\t\"modifier\": 0, \n\t\t\"amount\": 1, \n\t\t\"sides\": 12\n\t\t}\n\t]\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1639897946508.6094,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_46fbf930dd4e4c358b7dc12d626b7d57",
+            "parentId": "wrk_795aeea3b6bf49ce92a04cc7bbf1b359",
+            "modified": 1639986732241,
+            "created": 1639957629089,
+            "url": "{{ _.schema }}://{{ _.base_path }}/roll",
+            "name": "/roll one of each",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"dice\":\n\t[\n\t\t\t{\n\t\t\t\"modifier\": 0, \n\t\t\t\"amount\": 1, \n\t\t\t\"sides\": 4\n\t\t\t},\n\t\t{\n\t\t\"modifier\": 0, \n\t\t\"amount\": 1, \n\t\t\"sides\": 6\n\t\t},\n\t\t{\n\t\t\"modifier\": 0, \n\t\t\"amount\": 1, \n\t\t\"sides\": 8\n\t\t},\n\t\t{\n\t\t\"modifier\": 0, \n\t\t\"amount\": 1, \n\t\t\"sides\": 10\n\t\t},\n\t\t{\n\t\t\"modifier\": 0, \n\t\t\"amount\": 1, \n\t\t\"sides\": 12\n\t\t},\n\t\t{\n\t\t\"modifier\": 0, \n\t\t\"amount\": 1, \n\t\t\"sides\": 20\n\t\t}\n\t]\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1639915413822.3047,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_f9c9b0b763c443cbab925886c21f1f8a",
+            "parentId": "wrk_795aeea3b6bf49ce92a04cc7bbf1b359",
+            "modified": 1639960868261,
+            "created": 1639957775987,
+            "url": "{{ _.schema }}://{{ _.base_path }}/roll",
+            "name": "/roll 4d6",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"dice\":\n\t[\n\t\t{\n\t\t\"modifier\": 0, \n\t\t\"amount\": 4, \n\t\t\"sides\": 6\n\t\t}\n\t]\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1639924147479.1523,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_40569beac7fb4a22a83108697564535f",
+            "parentId": "wrk_795aeea3b6bf49ce92a04cc7bbf1b359",
+            "modified": 1641440407351,
+            "created": 1639959170762,
+            "url": "{{ _.schema }}://{{ _.base_path }}/roll",
+            "name": "/roll empty body",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": ""
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1639928514307.5762,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_1cd7b24de8a34880ab568dd3a4003431",
+            "parentId": "wrk_795aeea3b6bf49ce92a04cc7bbf1b359",
+            "modified": 1641440406408,
+            "created": 1639962737819,
+            "url": "{{ _.schema }}://{{ _.base_path }}/roll",
+            "name": "/roll",
+            "description": "",
+            "method": "GET",
+            "body": {
+                "mimeType": "application/json",
+                "text": ""
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1639930697721.788,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_2d03571cfc40413e8a52a77716c063fc",
+            "parentId": "wrk_795aeea3b6bf49ce92a04cc7bbf1b359",
+            "modified": 1640062086271,
+            "created": 1640062082335,
+            "url": "{{ _.schema }}://{{ _.base_path }}/npc",
+            "name": "npc",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [],
+            "authentication": {},
+            "metaSortKey": -1639932961869.5,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_47a0262cc49449c7a9fba7c8f0c742f0",
+            "parentId": "wrk_795aeea3b6bf49ce92a04cc7bbf1b359",
+            "modified": 1641439027776,
+            "created": 1640626245256,
+            "url": "{{ _.schema }}://{{ _.base_path }}/loot:create_table",
+            "name": "test roll",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\"name\": \"test loot\",\n    \"description\": \"test loot description\",\n    \"weight\": 1,\n    \"value\": 1,\n    \"rarity\": \"common\",\n    \"type\": \"test\",\n    \"image\": \"test.png\"}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1639931789428.894,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_9b2eef2e876140c3929d0a12690ead2c",
+            "parentId": "wrk_795aeea3b6bf49ce92a04cc7bbf1b359",
+            "modified": 1641442290797,
+            "created": 1641438820918,
+            "url": "{{ _.schema }}://{{ _.base_path }}/loot:create_table",
+            "name": "Create Loot Table",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": ""
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "api-key",
+                    "value": "TEST"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1639931243575.341,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_db9d6f530d404ca79b905e16a0c300dd",
+            "parentId": "wrk_795aeea3b6bf49ce92a04cc7bbf1b359",
+            "modified": 1641442451471,
+            "created": 1641438868519,
+            "url": "{{ _.schema }}://{{ _.base_path }}/loot:drop_table",
+            "name": "Drop Loot Table",
+            "description": "",
+            "method": "DELETE",
+            "body": {
+                "mimeType": "application/json",
+                "text": ""
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1639931516502.1177,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_fdff2320a13941a0b23c0c6c1c91dd85",
+            "parentId": "wrk_795aeea3b6bf49ce92a04cc7bbf1b359",
+            "modified": 1641442316409,
+            "created": 1641438889131,
+            "url": "{{ _.schema }}://{{ _.base_path }}/loot",
+            "name": "Get Loot Collection",
+            "description": "",
+            "method": "GET",
+            "body": {
+                "mimeType": "application/json",
+                "text": ""
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1639931652965.5059,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_3ce73564dc424d0387e5a7496f6c7fc5",
+            "parentId": "wrk_795aeea3b6bf49ce92a04cc7bbf1b359",
+            "modified": 1641442087463,
+            "created": 1641438919181,
+            "url": "{{ _.schema }}://{{ _.base_path }}/loot/2",
+            "name": "Get Loot Resource",
+            "description": "",
+            "method": "GET",
+            "body": {
+                "mimeType": "application/json",
+                "text": ""
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1639931721197.2,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_bffdebd82a98429d9dc8aab62a2dc2e7",
+            "parentId": "wrk_795aeea3b6bf49ce92a04cc7bbf1b359",
+            "modified": 1641442040442,
+            "created": 1641438937680,
+            "url": "{{ _.schema }}://{{ _.base_path }}/loot/1",
+            "name": "Delete Loot Resource",
+            "description": "",
+            "method": "DELETE",
+            "body": {
+                "mimeType": "application/json",
+                "text": ""
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "api-key",
+                    "value": "TEST"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1639931755313.0469,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_91b17a0c4dcc4bcc9b6008178d2c35e8",
+            "parentId": "wrk_795aeea3b6bf49ce92a04cc7bbf1b359",
+            "modified": 1641442027450,
+            "created": 1641438963214,
+            "url": "{{ _.schema }}://{{ _.base_path }}/loot/1",
+            "name": "Update Loot Resource",
+            "description": "",
+            "method": "PUT",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\t\"name\": \"test\",\n\t\t\"description\": \"test\",\n\t\t\"bit_value\": 1,\n\t\t\"channel_point_value\": 1,\n\t\t\"description\": \"test\",\n\t\t\"image_url\": \"{fake.url()}/.jpg\",\n\t\t\"custom_message\": \"test\"\n\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "api-key",
+                    "value": "TEST"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1639931772370.9705,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_44bcf7e12caa4fa58e4366ab9cfdd8c0",
+            "parentId": "wrk_795aeea3b6bf49ce92a04cc7bbf1b359",
+            "modified": 1641442017842,
+            "created": 1641439008006,
+            "url": "{{ _.schema }}://{{ _.base_path }}/loot",
+            "name": "Create Loot Resource",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\t\"name\": \"test\",\n\t\t\"description\": \"test\",\n\t\t\"bit_value\": 1,\n\t\t\"channel_point_value\": 1,\n\t\t\"description\": \"test\",\n\t\t\"image_url\": \"{fake.url()}/.jpg\",\n\t\t\"custom_message\": \"test\"\n\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "api-key",
+                    "value": "TEST"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1639931780899.9321,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_2d0a1b8e9c4b496d9507861125647555",
+            "parentId": "wrk_795aeea3b6bf49ce92a04cc7bbf1b359",
+            "modified": 1641442305548,
+            "created": 1641439034579,
+            "url": "{{ _.schema }}://{{ _.base_path }}/loot:seed",
+            "name": "Seed Loot Table",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\"loot_count\": 100}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "api-key",
+                    "value": "TEST"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1639931785164.413,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "env_c10728952515cce18d90a133e8025acd3bf23fb5",
+            "parentId": "wrk_795aeea3b6bf49ce92a04cc7bbf1b359",
+            "modified": 1639951532196,
+            "created": 1639932865079,
+            "name": "Base Environment",
+            "data": {
+                "schema": "http",
+                "base_path": "0.0.0.0:8080"
+            },
+            "dataPropertyOrder": {
+                "&": [
+                    "schema",
+                    "base_path"
+                ]
+            },
+            "color": null,
+            "isPrivate": false,
+            "metaSortKey": 1639932865080,
+            "_type": "environment"
+        },
+        {
+            "_id": "jar_c10728952515cce18d90a133e8025acd3bf23fb5",
+            "parentId": "wrk_795aeea3b6bf49ce92a04cc7bbf1b359",
+            "modified": 1639932865082,
+            "created": 1639932865082,
+            "name": "Default Jar",
+            "cookies": [],
+            "_type": "cookie_jar"
+        },
+        {
+            "_id": "spc_fd11ace960314f83bc2c1d616c67908b",
+            "parentId": "wrk_795aeea3b6bf49ce92a04cc7bbf1b359",
+            "modified": 1639932865065,
+            "created": 1639932865065,
+            "fileName": "table fables",
+            "contents": "",
+            "contentType": "yaml",
+            "_type": "api_spec"
+        },
+        {
+            "_id": "env_9ec6ba16dc4f42d499637a1c7598c3e1",
+            "parentId": "env_c10728952515cce18d90a133e8025acd3bf23fb5",
+            "modified": 1639951581934,
+            "created": 1639951449404,
+            "name": "Production",
+            "data": {
+                "schema": "https",
+                "base_path": "tablefables.herokuapp.com"
+            },
+            "dataPropertyOrder": {
+                "&": [
+                    "schema",
+                    "base_path"
+                ]
+            },
+            "color": "#b43c3c",
+            "isPrivate": false,
+            "metaSortKey": 1639951449404,
+            "_type": "environment"
+        },
+        {
+            "_id": "env_b833b74684e04a53a077aedb57a9ad16",
+            "parentId": "env_c10728952515cce18d90a133e8025acd3bf23fb5",
+            "modified": 1639951551461,
+            "created": 1639951516567,
+            "name": "Dev",
+            "data": {
+                "schema": "http",
+                "base_path": "0.0.0.0:8080"
+            },
+            "dataPropertyOrder": {
+                "&": [
+                    "schema",
+                    "base_path"
+                ]
+            },
+            "color": "#3cb48c",
+            "isPrivate": false,
+            "metaSortKey": 1639951449454,
+            "_type": "environment"
+        }
+    ]
+}
