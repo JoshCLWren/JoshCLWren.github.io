@@ -1,17 +1,73 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf8">
-  <meta name="generator" content="Insomnia Documenter v0.4.1">
-  <meta name="viewport" content="width=device-width, user-scalable=no">
-  <link rel="shortcut icon" href="favicon.ico">
-  <link rel="stylesheet" href="bundle.css">
-  <script defer src="bundle.js"></script>
-  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
-    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ComicPile Factory Operations</title>
+<style>
+:root{color-scheme:dark;font:16px system-ui,sans-serif;background:#0c1321;color:#e7edf8}
+*{box-sizing:border-box}body{margin:0}main{max-width:1100px;margin:auto;padding:clamp(1rem,4vw,3rem)}
+h1{font-size:clamp(1.9rem,5vw,3rem);margin:.2em 0}h2{font-size:1.2rem}
+p,.muted{color:#adbdd3}.eyebrow{letter-spacing:.15em;text-transform:uppercase;color:#8dbef8;font-size:.8rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:1rem}
+.card{background:#172235;border:1px solid #34445d;border-radius:14px;padding:1.2rem;min-width:0}
+.metric{font-size:1.65rem;font-weight:700}.unknown{color:#ffcb8c}
+table{width:100%;border-collapse:collapse}td,th{text-align:left;padding:.65rem;border-bottom:1px solid #34445d}
+.scroll{overflow-x:auto}a{color:#9bc8ff}small{color:#bac9dc}
+progress{width:100%;accent-color:#76caa2}footer{padding:2rem 0}
+</style>
 </head>
-<body>
-  <noscript>In order to view this documentation page, you have to enable JavaScript in your web browser.</noscript>
-  <div id="app" data-root="."></div>
-</body>
-</html>
+<body><main>
+<p class="eyebrow">ComicPile · Rotisserie</p>
+<h1>Factory Operations</h1>
+<p>Public, sanitized fleet telemetry. Unavailable measurements are never treated as healthy.</p>
+<p id="status" role="status" aria-live="polite">Loading published measurements…</p>
+<section aria-labelledby="latest-heading"><h2 id="latest-heading">Latest observation</h2>
+<div class="grid">
+<div class="card"><p>Last published</p><div id="published" class="metric unknown">Unavailable</div></div>
+<div class="card"><p>Exhaustion incidents (24h)</p><div id="incidents" class="metric unknown">Unavailable</div></div>
+<div class="card"><p>API consumers</p><div id="consumers" class="metric unknown">Unavailable</div></div>
+</div></section>
+<section aria-labelledby="budgets-heading"><h2 id="budgets-heading">Installation API budgets</h2>
+<div id="budgets" class="grid"><div class="card unknown">No verified installation samples published.</div></div></section>
+<section aria-labelledby="other-heading"><h2 id="other-heading">Other quotas</h2>
+<div class="grid"><div class="card"><h3>GitHub Actions usage</h3><p id="actions" class="unknown">Unavailable</p></div><div class="card"><h3>AI provider usage</h3><p id="models" class="unknown">Unavailable</p></div></div></section>
+<footer><small>Data comes from published static JSON, not live page-view API requests. Reset times use America/Chicago. <a href="https://github.com/JoshCLWren/comic-pile/issues/3340">Quota investigation</a> · <a href="https://github.com/JoshCLWren/rotisserie/issues/36">Dashboard pipeline</a></small></footer>
+</main><script>
+'use strict';
+const $ = id => document.getElementById(id);
+const setText = (id, value) => { $(id).textContent = value == null ? 'Unavailable' : String(value); };
+const time = value => { const d = new Date(value); return Number.isNaN(d.getTime()) ? 'Unavailable' : new Intl.DateTimeFormat('en-US',{timeZone:'America/Chicago',dateStyle:'medium',timeStyle:'short',timeZoneName:'short'}).format(d); };
+const percent = (used,limit) => Number.isFinite(used)&&Number.isFinite(limit)&&limit>0 ? Math.round(100*used/limit) : null;
+const numeric = n => Number.isFinite(n) && n>=0 ? n.toLocaleString('en-US') : 'Unavailable';
+function cell(card,title,value) { const p=document.createElement('p');p.textContent=title;const strong=document.createElement('div');strong.className='metric';strong.textContent=value;card.append(p,strong); }
+function showBudget(sample) {
+ const card=document.createElement('article');card.className='card';
+ const h=document.createElement('h3');h.textContent=String(sample.alias || 'Unnamed installation');card.append(h);
+ for(const kind of ['core','graphql','search']) {
+   const b=sample[kind],label=kind==='core'?'REST core':kind==='graphql'?'GraphQL':'Search';
+   if(!b || !Number.isFinite(b.remaining)||!Number.isFinite(b.limit)||!Number.isFinite(b.used)) {cell(card,label,'Unavailable');continue;}
+   const pct=percent(b.used,b.limit);
+   cell(card,label,`${numeric(b.remaining)} / ${numeric(b.limit)} remaining (${pct==null?'unavailable':pct+'% used'})`);
+   const bar=document.createElement('progress');bar.max=b.limit;bar.value=Math.min(b.used,b.limit);bar.setAttribute('aria-label',label+' usage');card.append(bar);
+   const detail=document.createElement('p');detail.textContent=`Resets ${time(b.reset_at)} · 24h low: ${numeric(b.low_water_24h)}`;card.append(detail);
+ }
+ return card;
+}
+(async()=>{
+ try {
+   const response=await fetch('./factory-health/data.json',{cache:'no-store'});
+   if(!response.ok)throw new Error('No published telemetry');
+   const data=await response.json();
+   if(!data || data.schema_version!==1 || !Array.isArray(data.installations))throw new Error('Invalid telemetry schema');
+   setText('published',time(data.published_at));
+   setText('incidents',Number.isFinite(data.exhaustion_incidents_24h)?numeric(data.exhaustion_incidents_24h):null);
+   setText('consumers',Array.isArray(data.top_consumers) ? (data.top_consumers.length ? data.top_consumers.map(x=>String(x.name)+' ('+numeric(x.requests)+')').join(', ') : 'None recorded') : null);
+   setText('actions',data.actions?.summary ?? null);setText('models',data.ai_models?.summary ?? null);
+   const area=$('budgets');area.replaceChildren();
+   if(data.installations.length)data.installations.forEach(s=>area.append(showBudget(s)));
+   else {const n=document.createElement('div');n.className='card unknown';n.textContent='No verified installation samples published.';area.append(n);}
+   const age=Date.now()-Date.parse(data.published_at);
+   $('status').textContent=Number.isFinite(age)&&age>=0&&age<3600000?'Latest published snapshot loaded.':'Telemetry is stale or its publication time is unavailable.';
+ } catch { $('status').textContent='Telemetry unavailable. No verified factory installation observations have been published.'; }
+})();
+</script></body></html>
