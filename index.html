@@ -36,7 +36,7 @@ progress{width:100%;accent-color:#76caa2}footer{padding:2rem 0}
 'use strict';
 const $ = id => document.getElementById(id);
 const setText = (id, value) => { $(id).textContent = value == null ? 'Unavailable' : String(value); };
-const time = value => { const d = new Date(value); return Number.isNaN(d.getTime()) ? 'Unavailable' : new Intl.DateTimeFormat('en-US',{timeZone:'America/Chicago',dateStyle:'medium',timeStyle:'short',timeZoneName:'short'}).format(d); };
+const time = value => { const d = new Date(value); return Number.isNaN(d.getTime()) ? 'Unavailable' : new Intl.DateTimeFormat('en-US',{timeZone:'America/Chicago',dateStyle:'medium',timeStyle:'short'}).format(d); };
 const percent = (used,limit) => Number.isFinite(used)&&Number.isFinite(limit)&&limit>0 ? Math.round(100*used/limit) : null;
 const numeric = n => Number.isFinite(n) && n>=0 ? n.toLocaleString('en-US') : 'Unavailable';
 function cell(card,title,value) { const p=document.createElement('p');p.textContent=title;const strong=document.createElement('div');strong.className='metric';strong.textContent=value;card.append(p,strong); }
@@ -49,7 +49,7 @@ function showBudget(sample) {
    const pct=percent(b.used,b.limit);
    cell(card,label,`${numeric(b.remaining)} / ${numeric(b.limit)} remaining (${pct==null?'unavailable':pct+'% used'})`);
    const bar=document.createElement('progress');bar.max=b.limit;bar.value=Math.min(b.used,b.limit);bar.setAttribute('aria-label',label+' usage');card.append(bar);
-   const detail=document.createElement('p');detail.textContent=`Resets ${time(b.reset_at)} · 24h low: ${numeric(b.low_water_24h)}`;card.append(detail);
+   const detail=document.createElement('p');detail.textContent=`Resets ${time(b.reset_at)} · Observed 24h low: ${numeric(b.low_water_24h)}`;card.append(detail);
  }
  return card;
 }
@@ -66,8 +66,9 @@ function showBudget(sample) {
    const area=$('budgets');area.replaceChildren();
    if(data.installations.length)data.installations.forEach(s=>area.append(showBudget(s)));
    else {const n=document.createElement('div');n.className='card unknown';n.textContent='No verified installation samples published.';area.append(n);}
-   const age=Date.now()-Date.parse(data.published_at);
-   $('status').textContent=Number.isFinite(age)&&age>=0&&age<3600000?'Latest published snapshot loaded.':'Telemetry is stale or its publication time is unavailable.';
+   const timestamps=[data.published_at,...data.installations.map(s=>s.observed_at)];
+   const fresh=data.installations.length>0&&timestamps.every(t=>{const age=Date.now()-Date.parse(t);return Number.isFinite(age)&&age>=0&&age<3600000;});
+   $('status').textContent=fresh?'Latest published snapshot loaded.':'Telemetry is stale or its observation time is unavailable.';
  } catch { $('status').textContent='Telemetry unavailable. No verified factory installation observations have been published.'; }
 })();
 </script></body></html>
