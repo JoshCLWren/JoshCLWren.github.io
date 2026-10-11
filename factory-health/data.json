@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "published_at": "2026-10-11T05:49:11.783503Z",
+  "installations": [
+    {
+      "alias": "factory-comicpile-actions",
+      "observed_at": "2026-10-11T05:49:11.783503Z",
+      "core": {
+        "limit": 5000,
+        "remaining": 4939,
+        "used": 61,
+        "reset_at": "2026-10-11T06:30:02Z",
+        "low_water_24h": 4939
+      },
+      "graphql": {
+        "limit": 5000,
+        "remaining": 4997,
+        "used": 3,
+        "reset_at": "2026-10-11T06:32:27Z",
+        "low_water_24h": 4978
+      },
+      "search": {
+        "limit": 30,
+        "remaining": 30,
+        "used": 0,
+        "reset_at": "2026-10-11T05:50:11Z",
+        "low_water_24h": 30
+      }
+    }
+  ],
+  "exhaustion_incidents_24h": null,
+  "top_consumers": null,
+  "actions": {
+    "summary": "Unavailable"
+  },
+  "ai_models": {
+    "summary": "Unavailable"
+  }
+}
