@@ -11,29 +11,29 @@
       "alias": "factory-comicpile-actions",
       "core": {
         "limit": 5000,
-        "low_water_24h": 1093,
-        "remaining": 4989,
-        "reset_at": "2026-10-16T20:52:54Z",
-        "used": 11
+        "low_water_24h": 3144,
+        "remaining": 4844,
+        "reset_at": "2026-10-16T22:55:39Z",
+        "used": 156
       },
       "graphql": {
         "limit": 5000,
         "low_water_24h": 4972,
         "remaining": 5000,
-        "reset_at": "2026-10-16T20:57:04Z",
+        "reset_at": "2026-10-16T23:50:52Z",
         "used": 0
       },
-      "observed_at": "2026-10-16T19:57:04.543529+00:00",
+      "observed_at": "2026-10-16T22:50:52.530736+00:00",
       "search": {
         "limit": 30,
         "low_water_24h": 30,
         "remaining": 30,
-        "reset_at": "2026-10-16T19:58:04Z",
+        "reset_at": "2026-10-16T22:51:52Z",
         "used": 0
       }
     }
   ],
-  "published_at": "2026-10-16T21:04:14.632002Z",
+  "published_at": "2026-10-16T23:33:50.959958Z",
   "schema_version": 1,
   "top_consumers": null
 }
