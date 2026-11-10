@@ -12,28 +12,28 @@
       "core": {
         "limit": 5000,
         "low_water_24h": 103,
-        "remaining": 3344,
-        "reset_at": "2026-11-10T10:33:09Z",
-        "used": 1656
+        "remaining": 3620,
+        "reset_at": "2026-11-10T18:35:07Z",
+        "used": 1380
       },
       "graphql": {
         "limit": 5000,
         "low_water_24h": 4914,
-        "remaining": 4984,
-        "reset_at": "2026-11-10T10:43:33Z",
-        "used": 16
+        "remaining": 4953,
+        "reset_at": "2026-11-10T17:56:15Z",
+        "used": 47
       },
-      "observed_at": "2026-11-10T09:48:01.677659+00:00",
+      "observed_at": "2026-11-10T17:48:53.719853+00:00",
       "search": {
         "limit": 30,
         "low_water_24h": 30,
         "remaining": 30,
-        "reset_at": "2026-11-10T09:49:01Z",
+        "reset_at": "2026-11-10T17:49:53Z",
         "used": 0
       }
     }
   ],
-  "published_at": "2026-11-10T09:48:16.408671Z",
+  "published_at": "2026-11-10T17:49:09.496618Z",
   "schema_version": 1,
   "top_consumers": null
 }
