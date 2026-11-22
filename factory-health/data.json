@@ -5,35 +5,35 @@
   "ai_models": {
     "summary": "Unavailable"
   },
-  "exhaustion_incidents_24h": 1,
+  "exhaustion_incidents_24h": 0,
   "installations": [
     {
       "alias": "factory-comicpile-actions",
       "core": {
         "limit": 5000,
-        "low_water_24h": 0,
-        "remaining": 3768,
-        "reset_at": "2026-11-21T22:23:47Z",
-        "used": 1232
+        "low_water_24h": 2822,
+        "remaining": 2822,
+        "reset_at": "2026-11-22T02:24:01Z",
+        "used": 2178
       },
       "graphql": {
         "limit": 5000,
-        "low_water_24h": 3363,
-        "remaining": 4448,
-        "reset_at": "2026-11-21T22:12:50Z",
-        "used": 552
+        "low_water_24h": 4448,
+        "remaining": 4988,
+        "reset_at": "2026-11-22T03:15:10Z",
+        "used": 12
       },
-      "observed_at": "2026-11-21T21:40:43.537389+00:00",
+      "observed_at": "2026-11-22T02:16:36.557290+00:00",
       "search": {
         "limit": 30,
         "low_water_24h": 30,
         "remaining": 30,
-        "reset_at": "2026-11-21T21:41:43Z",
+        "reset_at": "2026-11-22T02:17:36Z",
         "used": 0
       }
     }
   ],
-  "published_at": "2026-11-21T21:41:02.508851Z",
+  "published_at": "2026-11-22T02:16:57.851394Z",
   "schema_version": 1,
   "top_consumers": null
 }
