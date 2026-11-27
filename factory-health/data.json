@@ -8,32 +8,32 @@
   "exhaustion_incidents_24h": 0,
   "installations": [
     {
-      "alias": "factory-comicpile-actions",
+      "alias": "factory-actions",
       "core": {
         "limit": 5000,
-        "low_water_24h": 2124,
-        "remaining": 2441,
-        "reset_at": "2026-11-23T20:45:25Z",
-        "used": 2559
+        "low_water_24h": 2410,
+        "remaining": 4584,
+        "reset_at": "2026-11-27T01:14:05Z",
+        "used": 416
       },
       "graphql": {
         "limit": 5000,
-        "low_water_24h": 2759,
-        "remaining": 4986,
-        "reset_at": "2026-11-23T21:14:51Z",
-        "used": 14
+        "low_water_24h": 4779,
+        "remaining": 4914,
+        "reset_at": "2026-11-27T00:57:25Z",
+        "used": 86
       },
-      "observed_at": "2026-11-23T20:17:19.375804+00:00",
+      "observed_at": "2026-11-27T00:37:37.860465+00:00",
       "search": {
         "limit": 30,
-        "low_water_24h": 30,
+        "low_water_24h": 29,
         "remaining": 30,
-        "reset_at": "2026-11-23T20:18:19Z",
+        "reset_at": "2026-11-27T00:38:37Z",
         "used": 0
       }
     }
   ],
-  "published_at": "2026-11-23T20:17:38.994664Z",
+  "published_at": "2026-11-27T00:38:01.192110Z",
   "schema_version": 1,
   "top_consumers": null
 }
