@@ -11,29 +11,29 @@
       "alias": "factory-actions",
       "core": {
         "limit": 5000,
-        "low_water_24h": 4194,
-        "remaining": 4375,
-        "reset_at": "2026-11-28T03:21:46Z",
-        "used": 625
+        "low_water_24h": 3396,
+        "remaining": 3396,
+        "reset_at": "2026-11-28T12:23:38Z",
+        "used": 1604
       },
       "graphql": {
         "limit": 5000,
-        "low_water_24h": 4822,
-        "remaining": 4953,
-        "reset_at": "2026-11-28T03:36:47Z",
-        "used": 47
+        "low_water_24h": 4939,
+        "remaining": 4939,
+        "reset_at": "2026-11-28T12:44:38Z",
+        "used": 61
       },
-      "observed_at": "2026-11-28T02:43:51.107541+00:00",
+      "observed_at": "2026-11-28T11:51:42.761148+00:00",
       "search": {
         "limit": 30,
-        "low_water_24h": 26,
+        "low_water_24h": 30,
         "remaining": 30,
-        "reset_at": "2026-11-28T02:44:51Z",
+        "reset_at": "2026-11-28T11:52:42Z",
         "used": 0
       }
     }
   ],
-  "published_at": "2026-11-28T02:44:11.855060Z",
+  "published_at": "2026-11-28T11:52:05.646933Z",
   "schema_version": 1,
   "top_consumers": null
 }
